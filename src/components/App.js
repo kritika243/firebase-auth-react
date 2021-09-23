@@ -1,5 +1,7 @@
+import Signup from './Signup'
+
 function App() {
-  return 'Namaste World'
+  return <Signup />
 }
 
 export default App
