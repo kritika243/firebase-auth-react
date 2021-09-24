@@ -9,14 +9,19 @@ function Signup() {
   const { signup } = useAuth()
   const [error, setError] = useState('')
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault()
 
     if (passwordRef.current.value !== passwordConfirmRef.current.value) {
       return setError('Passwords did not match')
     }
 
-    signup(emailRef.current.value, passwordRef.current.value)
+    try {
+      setError('')
+      await signup(emailRef.current.value, passwordRef.current.value)
+    } catch {
+      setError('Failed to create an accont')
+    }
   }
 
   return (
