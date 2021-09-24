@@ -8,6 +8,7 @@ function Signup() {
   const passwordConfirmRef = useRef()
   const { signup } = useAuth()
   const [error, setError] = useState('')
+  const [loading, setLoading] = useState(false)
 
   async function handleSubmit(event) {
     event.preventDefault()
@@ -18,10 +19,12 @@ function Signup() {
 
     try {
       setError('')
+      setLoading(true)
       await signup(emailRef.current.value, passwordRef.current.value)
     } catch {
       setError('Failed to create an accont')
     }
+    setLoading(false)
   }
 
   return (
