@@ -7,7 +7,7 @@ function Signup() {
   const emailRef = useRef()
   const passwordRef = useRef()
   const passwordConfirmRef = useRef()
-  const { signup } = useAuth()
+  const { login } = useAuth()
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
 
@@ -21,9 +21,9 @@ function Signup() {
     try {
       setError('')
       setLoading(true)
-      await signup(emailRef.current.value, passwordRef.current.value)
+      await login(emailRef.current.value, passwordRef.current.value)
     } catch {
-      setError('Failed to create an accont')
+      setError('Failed to login')
     }
     setLoading(false)
   }
