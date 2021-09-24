@@ -32,7 +32,7 @@ function Signup() {
       <Card>
         <Card.Body>
           <h2 className='text-center mb-4'>Sign Up</h2>
-          <Form>
+          <Form onSubmit={handleSubmit}>
             <Form.Group id='email'>
               <Form.Label>Email</Form.Label>
               <Form.Control type='email' ref={emailRef} required />
@@ -48,7 +48,7 @@ function Signup() {
               <Form.Control type='password' ref={passwordConfirmRef} required />
             </Form.Group>
 
-            <Button className='w-100' type='submit'>
+            <Button disabled={loading} className='w-100' type='submit'>
               Sign Up
             </Button>
           </Form>
