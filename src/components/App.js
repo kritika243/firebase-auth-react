@@ -2,6 +2,7 @@ import { Container } from 'react-bootstrap'
 import { AuthProvider } from '../contexts/AuthContext'
 import Signup from './Signup'
 import Dashboard from './Dashboard'
+import Login from './Login'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Switch>
               <Route exact path='/' component={Dashboard} />
               <Route path='/signup' component={Signup} />
+              <Route path='/login' component={Login} />
             </Switch>
           </AuthProvider>
         </Router>
