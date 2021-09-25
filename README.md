@@ -2,7 +2,7 @@
 
 ### This app demonstartes full firebase authentication workflow in React.
 
-> #### _This can be used as a **template / starting point** to implement SignUp / LogIn capabilities in other projects_
+> #### This can be used as a _template / starting point_ to implement SignUp / LogIn capabilities in other projects
 
 ## This covers
 
