@@ -1,8 +1,8 @@
 # Full Firebase Authentication in React
 
-This app demonstartes full firebase authentication workflow in React.
+### This app demonstartes full firebase authentication workflow in React.
 
-> _This can be used as a **template / starting point** to implement SignUp / LogIn capabilities in other projects_
+> #### _This can be used as a **template / starting point** to implement SignUp / LogIn capabilities in other projects_
 
 ## This covers
 
@@ -11,6 +11,10 @@ This app demonstartes full firebase authentication workflow in React.
 - Forgot Password -> Password Reset via email
 - Update Profile within app -> change email or password
 - Authenticated Routes
+
+### Preview
+
+![App Screenshot](https://github.com/kritika243/firebase-auth-react/blob/main/public/React-App.png)
 
 ### Available Scripts
 
